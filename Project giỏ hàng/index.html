@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/boostrap4.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="lib/1.css">
+    <link rel="stylesheet" href="font/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="menutren">
+        <div class="container-fluid"></div>
+    </div>
+    <hr>
+    <div class="container" id="noidung">
+        <div class="row thongbao pt-2">
+            <div class="col-sm-12" id="ndungtbao"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="tdto">GIỎ HÀNG<small id="số lượng"></small></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8" id="danhsachsanpham">
+                <div id="spgiohang"></div>
+            </div>
+             <!-- het cot trai -->
+            <div class="col-sm-4" id="tinhgia">
+                <div class="trang card card-body">
+                    <div class="dongtinhgia">
+                        <div class="phai float-right" id="giatamtinh"> <i class="fas fa-coins"></i></div>
+                        <div class="trai">Tạm tính</div>
+                    </div>
+                    <div class="thangtien">
+                        <div class="phai float-right">
+                            <div class="doto" id="thanhtien"><i class="fas fa-coins"></i></div>
+                            <div class="gom">(Đã bao gồm VAT)</div>
+                        </div>
+                        <div class="trai">Thành tiền</div>
+                    </div>
+                </div>
+                <br>
+                <a href="" class="btn btn-danger btn-block dathang">Tiến hành đặt hàng</a>
+            </div>
+        </div>
+        <div class="row sanphamkhac py-3">
+            <div class="col-sm-12">
+                <hr>
+                <h3 class="tdto">Sản phẩm khác</h3>
+            </div>
+            <div class="col-sm-12">
+                <div class="row" id="cacsanphamdamua">
+                    <!-- cho san pham da lay tu ham showSanPham(class quanlyhang ) -->
+                </div>
+            </div>
+            <!-- het 1 san pham -->
+            <br>
+        </div>
+    </div>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
